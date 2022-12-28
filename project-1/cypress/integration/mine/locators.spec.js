@@ -9,5 +9,7 @@ describe("Locators", () => {
   it("locating elements with the get command", () => {
     // use get to get one or more elements
     cy.get("button");
+
+    cy.getByTestId("btn-id-1");
   });
 });
