@@ -20,4 +20,8 @@ describe("Locators", () => {
 
     cy.get("[type='submit']").contains("Not Unique Text");
   });
+
+  it("locating elements with the find command", () => {
+    cy.get("#form-1").find(".btn-1");
+  });
 });
