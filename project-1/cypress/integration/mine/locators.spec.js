@@ -12,4 +12,12 @@ describe("Locators", () => {
 
     cy.getByTestId("btn-id-1");
   });
+
+  it("locating elements with contains command", () => {
+    cy.contains("Unique Text");
+
+    cy.contains("Not Unique Text");
+
+    cy.get("[type='submit']").contains("Not Unique Text");
+  });
 });
